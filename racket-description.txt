@@ -1,0 +1,39 @@
+{
+  "productos": [
+    {
+      "id": 1,
+      "nombre": "Raqueta de Tenis Pro",
+      "marca": "Marca A",
+      "descripcion": "Una raqueta de tenis profesional diseñada para jugadores avanzados.",
+      "precio": 199.99,
+      "imagen": "ruta/imagen1.jpg",
+      "categoria": "Tenis",
+      "disponibilidad": true,
+      "caracteristicas": {
+        "tipo": "Profesional",
+        "nivel": "Avanzado",
+        "material": "Fibra de carbono",
+        "tamaño_grip": "L3",
+        "equilibrio": "Cabeza pesada",
+        "patron_cuerdas": "16x19"
+      }
+    },
+    {
+      "id": 2,
+      "nombre": "Raqueta de Bádminton Elite",
+      "marca": "Marca B",
+      "descripcion": "Una raqueta de bádminton de alto rendimiento para jugadores competitivos.",
+      "precio": 149.99,
+      "imagen": "ruta/imagen2.jpg",
+      "categoria": "Bádminton",
+      "disponibilidad": true,
+      "caracteristicas": {
+        "nivel": "Competitivo",
+        "material": "Aleación de titanio",
+        "equilibrio": "Cabeza ligera",
+        "flexibilidad": "Media",
+        "longitud": "675 mm"
+      }
+    }
+  ]
+}
