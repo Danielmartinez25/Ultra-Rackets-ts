@@ -2,12 +2,14 @@ import mongoose from "mongoose";
 
 const mongoDB = async () : Promise<void> => {
     try {
-        const {connection} = await mongoose.connect(process.env.DB_CONNECTION || undefined);
-        const host = `database connect in ${connection.host}:${connection.port}`;
-        console.log(host);
+        await mongoose.set("strictQuery", false);
+        const DB_CONNECTION = process.env.DB_CONNECTION;
+        const {connection} = await mongoose.connect(DB_CONNECTION | undefined);
+        const url = ` ${connection.host}:${connection.port}`;
+        console.log(`database connect in ${url}`);
         
-    } catch (error) {
-        console.log(`error in database ${error.message}`);
+    } catch (e){
+        console.log(`error in database ${e.message}`);
         
     }
 };
