@@ -4,7 +4,7 @@
   "description": "Ultra rackets",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon ./dist/index.js",
+    "dev": "nodemon ./dist/app.js",
     "build" : "tsc -p .",
     "lint": "eslint --ext .ts"
   },

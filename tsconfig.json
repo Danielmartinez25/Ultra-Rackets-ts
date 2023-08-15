@@ -10,6 +10,7 @@
     "baseUrl": ".", // URL base para resolución de módulos
     "skipLibCheck": true,
     "removeComments": true,
+    "noImplicitAny": false,
     "paths": {
       "@/*": ["src/*"] // Configuración de rutas de importación
     },
