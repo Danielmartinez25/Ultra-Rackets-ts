@@ -1,5 +1,7 @@
+import  {hello}  from "@/controllers/product";
 import express from "express";
 const router = express.Router();
-const {} = require("");
 router
-.get("/product/:id",)
+.get("/hello",hello);
+
+export = router;

@@ -13,6 +13,9 @@ app.use(cookieParser());
 app.use(morgan("dev"));
 app.use(express.json());
 app.use(express.urlencoded({extended:false}));
+import productRouter from "@/routes/product";
+
+app.use("/api/product",productRouter);
 app.listen(PORT,()=>{
     console.log(
         `Servidor corriendo el el puerto ${HOST}:${PORT}`
